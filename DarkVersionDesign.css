@@ -1,0 +1,43 @@
+body{
+    background-image: url('Images/galaxy.jpg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    left:400px;
+    top:50px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: silver;
+    position: fixed;
+}
+
+#star{
+    color:white;
+    left:450px;
+    top: 200px;
+    position:fixed;
+}
+#login{
+    color:white;
+    left: 670px;
+    top: 350px;
+    position:fixed;
+}
+#logButton{
+    left:700px;
+    top:500px;
+    position:fixed;
+}
+#agree{
+    right:10px;
+    bottom:50px;
+    color:grey;
+    position:fixed;
+    font-size: 10px;
+}
