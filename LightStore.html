@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+   <head>
+    <meta charset="utf-8">
+    <title> Game </title>
+    <link rel="stylesheet" type="text/css" href="DarkStoreDesign.css">
+       </head>
+       <body>
+        
+       <h1>
+            Cob's Store
+            
+       </h1>
+       
+           Use Cob bucks
+      
+       
+       <div id="green">
+        <img src = "Images/green.jpeg" alt ="green" width="200" height="150">
+       </div>
+       <div id ="greenWords">
+        5 Cob's bucks for Green Mode
+        <br>
+        
+       </div>
+       <div id="blue">
+        <img src = "Images/blue.jpeg" alt ="blue" width="200" height="150">
+       </div>
+       <div id ="blueWords">
+        20 Cob's bucks for Blue Mode
+        <br>
+        
+        
+       </div>
+       <div id="purple">
+        <img src = "Images/purple.jpeg" alt ="purple" width="200" height="150">
+       </div>
+       <div id ="purpleWords">
+        50 Cob's bucks for Purple Mode
+        <br>
+        
+       </div>
+       <div id="gold">
+        <img src = "Images/gold.jpeg" alt ="gold" width="200" height="150">
+       </div>
+       <div id ="goldWords">
+        100 Cob's bucks for Gold Mode
+        <br>
+        
+       </div>
+       
+       <div id="cobBucks">
+        Dont forget to recharge your <span id="cobs"></span> cob bucks!
+        <br>
+        Click below to see your membership!
+        <br>Membership: <span id="mode"></span> <br>
+        <button style="background-color:blueviolet; height:30px;width:150px" value ="increment" onclick="click1()">Click Here!<span id="chosen"></span></button>
+       </div>
+       <div id ="darkMode">
+           Congrats this is dark mode! 
+           <br>
+           <img src = "Images/goldMem.jpg" alt ="sole" width="300" height="200"> 
+       </div>
+
+       
+
+       </body>
+       <script type="text/javascript">
+           var mode;
+           var cobs = sessionStorage.getItem("cobs");
+           document.getElementById("cobs").innerHTML = cobs;
+           document.getElementById("darkMode").style.display ="none";
+            function click1()
+            {
+                var cobs = sessionStorage.getItem("cobs");
+                document.getElementById("cobs").innerHTML = cobs;
+                if(cobs<=5)
+                {
+                   mode = " green ";
+                   document.getElementById("darkMode").style.display ="none";
+                }
+                if(cobs>=20)
+                {
+                 mode = " blue ";
+                 document.getElementById("darkMode").style.display ="none";
+                }
+                if(cobs>=50)
+                {
+                 mode = " purple ";
+                 document.getElementById("darkMode").style.display ="none";
+                }
+                if(cobs>=100)
+                {
+                 mode = " gold ";
+                 document.getElementById("darkMode").style.display ="block";
+
+                }
+        
+                document.getElementById("mode").innerHTML = mode;
+                sessionStorage.setItem("mode",mode);
+            }
+           
+
+       </script>

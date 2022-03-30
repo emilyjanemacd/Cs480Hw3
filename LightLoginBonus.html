@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+   <head>
+    <meta charset="utf-8">
+    <title> Game </title>
+    <link rel="stylesheet" type="text/css" href="LightLoginBonusDesign.css">
+       </head>
+       <body>
+        
+       <h1>
+           Daily Login Bonus
+       </h1>
+       <div id ="gameBox">
+        
+            <img src = "Images/grey.jpeg" alt ="grey" width="700" height="400">
+           
+        
+    </div>
+    <div id="incant">
+        
+        Incantation of the day: <br> <span id="chosen"></span>
+        <br> <br> <br> <br> <br> 
+        <input type = "checkbox" name ="affirmative" value="I agree" > I have read the incantation above
+        <br>
+        <input type = "checkbox" name ="affirmative" value="I agree" > I agree to be one step closer to dark mode!
+        
+    </div>
+    <div id="submit">
+        <a href="Success.html"><button style="background-color:silver; height:50px;width:150px" value ="increment" id="timeTrue" onclick="submit()"> Submit</button></a>
+        
+        
+    </div>
+    <div id ="agree">
+        *My checkmark here is equivalent to reciting this incantation out loud
+    </div>
+    <script type="text/javascript">
+        
+        var chosen = sessionStorage.getItem("chosen");
+        document.getElementById("chosen").innerHTML = chosen;
+        
+        
+    </script>
+    </body>

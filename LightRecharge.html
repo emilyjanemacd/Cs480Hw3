@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+   <head>
+    <meta charset="utf-8">
+    <title> Game </title>
+    <link rel="stylesheet" type="text/css" href="LightRechargeDesign.css">
+       </head>
+       <body>
+        
+       <h1>
+       
+           Recharge
+       </h1>
+       <div id="cobBucks">
+        <h3>
+            Cob Bucks
+        </h3>
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button1()">BUY <span id="cobs"></span></button>
+       <br>
+       <br>
+
+       </div>
+       <div id ="payment">
+        <h3>
+            Payment Information
+        </h3>
+         <form>
+            <input type ="text"> Card number
+        </form>
+        <form>
+            <input type ="text"> Name on card
+        </form>
+        <form>
+            <input type ="text"> Security code
+        </form>
+    </div>
+    
+        <div id ="submit">
+            <a href="Success.html"><button style="background-color:gold; height:70px;width:100px" value ="increment" onclick="getTotal()"> SUBMIT </button></a>
+        </div>
+    <div id = "agree">
+        <p>
+            <p>
+                By accepting this agreement you enter into a binding and eternal contract with the ruinous powers to
+               engage in full and total custodianship of (1) human soul, granted to you in exchange for the payment
+               described in your purchase summary. You will also be mailed a frozen fish as described to you in the
+               listing. This fish, henceforth called the “fish vessel”, represents the binding terms of your
+               custodianship, and must be kept frozen at all times to avoid the risk of an all-consuming flame that can
+               never be quenched. You hereby indemnify Cob’s of any harm caused by allowing the fish vessel to
+               thaw, including but not limited to property damage, incineration, and the formation of gaping maws of
+               despair on your property.
+               By consuming the fish vessel, you forfeit any rights to the above contracted soul, and agree to render
+               your soul onto Cob’s, or our chosen agent, upon your expiration. To cancel this contract at any time,
+               simply resurrect the fish vessel using the necromantic arts, then cast the living fish vessel into a suitable
+               void, no less than 24 miles deep. Attach a notarized copy of your name, social security number, order
+               number, and exact second of birth to ensure processing of your cancellation. 
+           </p>
+        </p>
+        <br>
+        <input type = "checkbox" name ="affirmative" value="I agree" >I accept the terms and conditions 
+      </div>
+       </body>
+       <script type="text/javascript">
+          var cobs =0;
+           function button1(){
+            cobs++;
+            document.getElementById("cobs").innerHTML = cobs;
+            sessionStorage.setItem("cobs",cobs);
+           }
+           
+       </script>

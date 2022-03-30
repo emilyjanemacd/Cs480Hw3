@@ -1,0 +1,26 @@
+body{
+    background-image: url('Images/galaxy.jpg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    left:600px;
+    top:0px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: silver;
+    position: fixed;
+}
+#total{
+    color:white;
+    font-size: 30px;
+    left:400px;
+    top:200px;
+    position:fixed;
+
+}

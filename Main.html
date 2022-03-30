@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+   <head>
+    <meta charset="utf-8">
+    <title> Game </title>
+    <link rel="stylesheet" type="text/css" href="MainDesign.css">
+       </head>
+       <body>
+        
+       <h1>
+            Cob's Soulo Game
+       </h1>
+
+       <div id ="logBonus">
+       <p>
+         <a href="DarkLoginBonus.html"><button style="background-color:blueviolet; height:30px;width:150px" value ="increment" onclick="log()">Login Bonus<span id="chosen"></span></button></a> 
+       </p>
+    </div>
+    <div id="store">
+       <p>
+         <a href="DarkStore.html"><button style="background-color:blueviolet; height:30px;width:150px" value ="increment" onclick="button1()">Store<span id="storeButton"></span></button></a> 
+       </p>
+    </div>
+    <div id="recharge">
+       <p>
+       <a href="DarkRecharge.html"><button style="background-color:blueviolet; height:30px;width:150px" value ="increment" onclick="button1()">Recharge<span id="rechargeButton"></span></button></a>
+       </p>
+    </div>
+    
+    <div id ="gameBox">
+
+      <p>
+          Dream log
+      </p>
+      <form>
+         <input type ="text"> 
+      </form>
+  </div>
+  <div id="info">
+   <h3>
+      Only gold membership players can see the dark mode so keep logging on or buying more cob bucks!.
+   </h3>
+  </div>
+  
+  
+  <script type="text/javascript">
+      
+        var incantations = [];
+        incantations[0]= "Volo videre tenebras aeternas";
+        incantations[1]= "Ego certe amo tenebras";
+        incantations[2]= "Vere fan tenebrarum";
+        incantations[3]= "Me et tenebrae sunt sicut amici optimi";
+        incantations[4]= "Ita vere gratum essem si habere possem infinitas tenebras";
+        incantations[5]= "Hoc vere sit multum";
+        incantations[6]= "Gratias tibi valde";
+        var chosen =" "
+      function log(){
+
+         for (let i = 0; i < 7; i++) {
+           var randNum =  Math.floor(Math.random() * 6) + 1;
+           console.log(randNum)
+        }
+       chosen = incantations[randNum];
+        document.getElementById("chosen").innerHTML = chosen;
+        sessionStorage.setItem("chosen",chosen)
+      }
+   </script>
+</body>

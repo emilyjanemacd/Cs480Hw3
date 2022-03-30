@@ -1,0 +1,96 @@
+body{
+    background-image: url('Images/galaxy.jpg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    left:600px;
+    top:0px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: silver;
+    position: fixed;
+}
+#membership{
+    left:1130px;
+    top:0px;
+    position:fixed;
+}
+#green{
+    left:50px;
+    top:230px;
+    position:fixed;
+}
+#greenWords{
+    color:white;
+    font-size: 15px;
+    left:50px;
+    top:380px;
+    position:fixed;
+}
+#blue{
+    left:50px;
+    top:450px;
+    position:fixed;
+}
+#blueWords{
+    color:white;
+    font-size: 15px;
+    left:50px;
+    top:600px;
+    position:fixed;
+}
+#purple{
+    left:350px;
+    top:450px;
+    position:fixed;
+}
+#purpleWords{
+    color:white;
+    font-size: 15px;
+    left:350px;
+    top:600px;
+    position:fixed;
+}
+#gold{
+    left:350px;
+    top:230px;
+    position:fixed;
+}
+#goldWords{
+    color:white;
+    font-size: 15px;
+    left:350px;
+    top:380px;
+    position:fixed;
+}
+#darkMode{
+    left:800px;
+    top:600px;
+    position:fixed;
+    font-size: 20px;
+    color:white;
+}
+#cobBucks{
+
+    text-align: center;
+    background-color: white;
+    font-size: 20px;;
+    left:800px;
+    top:230px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: gold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    position:fixed;
+    
+}
